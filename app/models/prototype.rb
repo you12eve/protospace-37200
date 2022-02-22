@@ -7,4 +7,6 @@ class Prototype < ApplicationRecord
   validates :title, presence: true
   validates :catchcopy, presence: true
   validates :concept, presence: true
-end
+  validates :image, presence: true
+
+end 
