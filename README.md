@@ -45,7 +45,7 @@ Things you may want to cover:
 |------------------|----------|------------------------------|
 |title             |string    |null: false                   |
 |catch_copy        |text      |null: false                   |
-|consept           |text      |null: false                   |
+|concept           |text      |null: false                   |
 |user              |references|null: false, foreign_key: true|
 
 - belongs_to :user

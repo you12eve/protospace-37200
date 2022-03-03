@@ -1,5 +1,5 @@
 class PrototypesController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show, :edit]
+  before_action :authenticate_user!, only: [:edit, :update, :edit, :new, :create]
   before_action :move_to_index, except: [:index, :show]
 
   def index
@@ -52,7 +52,7 @@ class PrototypesController < ApplicationController
   end
 
   def move_to_index
-    unless user_signed_in?
+    unless user_signed_in? == current_user.name
       redirect_to root_path
     end
   end
